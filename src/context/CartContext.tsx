@@ -1,4 +1,4 @@
-import { createContext, PropsWithChildren, useReducer, ReactNode } from "react";
+import { createContext, useReducer } from "react";
 import cartReducer from "./cartReducer";
 
 interface CartItem {
@@ -14,7 +14,7 @@ interface CartContextType {
 
 export const CartContext = createContext<CartContextType | any>(undefined);
 
-const CartContextProvider = ({ children }: PropsWithChildren<ReactNode>) => {
+const CartContextProvider = ({ children }: React.ReactNode | any) => {
   const [cart, dispatch] = useReducer(cartReducer, [] as CartItem[]);
 
   return (
