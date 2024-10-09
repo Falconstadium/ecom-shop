@@ -114,7 +114,7 @@ export const products = [
     quantity: 1,
   },
   {
-    id: 11,
+    id: 12,
     name: "red t-shirt",
     price: 80,
     src: redTshirt,

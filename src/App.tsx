@@ -7,7 +7,7 @@ declare module "@tanstack/react-router";
 
 const App = () => {
   return (
-    <article className="grid min-h-dvh w-full grid-rows-[1fr_auto] bg-light">
+    <article className="grid min-h-dvh w-full grid-rows-[auto_1fr_auto] bg-light">
       <RouterProvider router={router} />
     </article>
   );

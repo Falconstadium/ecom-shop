@@ -11,6 +11,7 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as UserImport } from './routes/user'
 import { Route as ContactImport } from './routes/contact'
 import { Route as CollectionImport } from './routes/collection'
 import { Route as ChekoutImport } from './routes/chekout'
@@ -19,6 +20,11 @@ import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
+
+const UserRoute = UserImport.update({
+  path: '/user',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const ContactRoute = ContactImport.update({
   path: '/contact',
@@ -96,6 +102,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactImport
       parentRoute: typeof rootRoute
     }
+    '/user': {
+      id: '/user'
+      path: '/user'
+      fullPath: '/user'
+      preLoaderRoute: typeof UserImport
+      parentRoute: typeof rootRoute
+    }
   }
 }
 
@@ -108,6 +121,7 @@ export interface FileRoutesByFullPath {
   '/chekout': typeof ChekoutRoute
   '/collection': typeof CollectionRoute
   '/contact': typeof ContactRoute
+  '/user': typeof UserRoute
 }
 
 export interface FileRoutesByTo {
@@ -117,6 +131,7 @@ export interface FileRoutesByTo {
   '/chekout': typeof ChekoutRoute
   '/collection': typeof CollectionRoute
   '/contact': typeof ContactRoute
+  '/user': typeof UserRoute
 }
 
 export interface FileRoutesById {
@@ -127,13 +142,28 @@ export interface FileRoutesById {
   '/chekout': typeof ChekoutRoute
   '/collection': typeof CollectionRoute
   '/contact': typeof ContactRoute
+  '/user': typeof UserRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/cart' | '/chekout' | '/collection' | '/contact'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/cart'
+    | '/chekout'
+    | '/collection'
+    | '/contact'
+    | '/user'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/cart' | '/chekout' | '/collection' | '/contact'
+  to:
+    | '/'
+    | '/about'
+    | '/cart'
+    | '/chekout'
+    | '/collection'
+    | '/contact'
+    | '/user'
   id:
     | '__root__'
     | '/'
@@ -142,6 +172,7 @@ export interface FileRouteTypes {
     | '/chekout'
     | '/collection'
     | '/contact'
+    | '/user'
   fileRoutesById: FileRoutesById
 }
 
@@ -152,6 +183,7 @@ export interface RootRouteChildren {
   ChekoutRoute: typeof ChekoutRoute
   CollectionRoute: typeof CollectionRoute
   ContactRoute: typeof ContactRoute
+  UserRoute: typeof UserRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -161,6 +193,7 @@ const rootRouteChildren: RootRouteChildren = {
   ChekoutRoute: ChekoutRoute,
   CollectionRoute: CollectionRoute,
   ContactRoute: ContactRoute,
+  UserRoute: UserRoute,
 }
 
 export const routeTree = rootRoute
@@ -180,7 +213,8 @@ export const routeTree = rootRoute
         "/cart",
         "/chekout",
         "/collection",
-        "/contact"
+        "/contact",
+        "/user"
       ]
     },
     "/": {
@@ -200,6 +234,9 @@ export const routeTree = rootRoute
     },
     "/contact": {
       "filePath": "contact.tsx"
+    },
+    "/user": {
+      "filePath": "user.tsx"
     }
   }
 }
