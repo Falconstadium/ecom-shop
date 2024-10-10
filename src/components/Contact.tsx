@@ -29,7 +29,7 @@ const Contact = () => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-          toast.success(t("contact.error_toast"));
+          toast.error(t("contact.error_toast"));
         },
       );
   };

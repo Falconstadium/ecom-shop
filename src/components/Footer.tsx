@@ -1,8 +1,8 @@
-"use client";
-
 import { Link } from "@tanstack/react-router";
 import { Button, Footer } from "flowbite-react";
 import { useTranslation } from "react-i18next";
+import franceFlag from "../assets/france flag.jfif";
+import britainFlag from "../assets/britain flag.jfif";
 
 export function FooterDown() {
   const { t, i18n } = useTranslation("global");
@@ -39,9 +39,19 @@ export function FooterDown() {
         <Footer.Divider />
         <Button.Group>
           <Button onClick={() => handleChangeLang("en")} color="light">
+            <img
+              className="mr-2 w-8 rounded-full object-cover"
+              src={britainFlag}
+              alt="english"
+            />
             English
           </Button>
           <Button onClick={() => handleChangeLang("fr")} color="light">
+            <img
+              className="mr-2 w-8 rounded-full object-cover"
+              src={franceFlag}
+              alt="fraçais"
+            />
             Français
           </Button>
         </Button.Group>
