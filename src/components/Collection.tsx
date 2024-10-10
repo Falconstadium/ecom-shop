@@ -4,7 +4,6 @@ import { Button } from "flowbite-react";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { useTranslation } from "react-i18next";
-import { FooterDown } from "./Footer";
 
 const Collection = () => {
   const { t } = useTranslation("global");
