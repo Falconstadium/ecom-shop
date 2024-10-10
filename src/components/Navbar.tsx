@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import { Navbar } from "flowbite-react";
 import logo from "../assets/baggage-claim.svg";
+import NavList from "./NavList";
 
 const HeaderNav = () => {
   const context = useContext(CartContext);
@@ -20,7 +21,7 @@ const HeaderNav = () => {
           className="flex items-center gap-2 text-lg font-semibold lg:text-xl"
         >
           <img src={logo} className="w-5" alt="logo" />
-          yasriShop
+          ecom Shopper
         </Link>
         <div className="flex items-center gap-3 md:order-2">
           <div className="flex items-center gap-3">
@@ -64,35 +65,7 @@ const HeaderNav = () => {
           </div>
           <Navbar.Toggle />
         </div>
-        <Navbar.Collapse className="uppercase">
-          <Link
-            to={"/"}
-            className="rounded-sm px-2 py-1 font-medium transition-colors duration-200 ease-in-out hover:bg-slate-800 hover:text-light [&.active]:bg-slate-950 [&.active]:text-light"
-          >
-            home
-          </Link>
-
-          <Link
-            to={"/collection"}
-            className="rounded-sm px-2 py-1 font-medium transition-colors duration-200 ease-in-out hover:bg-slate-800 hover:text-light [&.active]:bg-slate-950 [&.active]:text-light"
-          >
-            collections
-          </Link>
-
-          <Link
-            to={"/about"}
-            className="rounded-sm px-2 py-1 font-medium transition-colors duration-200 ease-in-out hover:bg-slate-800 hover:text-light [&.active]:bg-slate-950 [&.active]:text-light"
-          >
-            about
-          </Link>
-
-          <Link
-            to={"/contact"}
-            className="rounded-sm px-2 py-1 font-medium transition-colors duration-200 ease-in-out hover:bg-slate-800 hover:text-light [&.active]:bg-slate-950 [&.active]:text-light"
-          >
-            contact
-          </Link>
-        </Navbar.Collapse>
+        <NavList />
       </Navbar>
     </>
   );

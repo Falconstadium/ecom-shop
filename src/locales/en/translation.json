@@ -1,0 +1,65 @@
+{
+  "nav":{
+    "home": "home",
+    "collection":"collections",
+    "about":"about",
+    "contact":"contact"
+  },
+
+  "collection":{
+    "parag": "Discover more products with this awesome collection"
+  },
+
+  "cart":{
+    "empty": "Your cart is empty.",
+    "back": "Back to Shop",
+    "add": "Add to Cart",
+    "remove": "remove",
+    "checkout": "Proceed to Checkout"
+  },
+
+  "subscribe":{
+    "title": "Subscribe to our newsletter",
+    "btn": "subsribe"
+  },
+
+  "about":{
+    "description": "Welcome to ecom Shopper! We are dedicated to providing you with the best experience possible. Ourteam is passionate about delivering high-quality content andservices that meet your needs. Whether you’re looking for the latestnews, insightful articles, or top-notch products, we’ve got youcovered. Our Mission is to empower our users with reliableinformation and exceptional services. We strive to be your go-tosource for all your needs, ensuring that you have access to the bestresources available. Our Thank you for visiting our website. We hopeyou enjoy your time here and find everything you’re looking for. Ifyou have any questions or feedback, please don’t hesitate to reachout to us.",
+    "brand": "ecom Shopper"
+  },
+
+  "contact":{
+    "name": "Your name",
+    "email": "Your email",
+    "placeholder": "name@email.com",
+    "country": "Your country",
+    "country_place": "Morocco",
+    "message": "Your message",
+    "textarea": "Leave a message...",
+    "submit": "submit",
+    "success_toast": "Message sent succefully",
+    "error_toast": "Message not send"
+  },
+
+  "user":{
+    "create": "Create your account",
+    "email": "Your email",
+    "pass": "Your password",
+    "repeat": "Repeat password",
+    "terms": "I agree with the",
+    "condition": "terms and conditions",
+    "register_btn": "Register new account",
+    "already": "Already have an account ?",
+    "signin": "Sign In",
+    "signup": "Sign Up",
+    "account": "Don't have an account",
+    "remember": "Remember me"
+  },
+
+  "footer":{
+    "home": "home",
+    "collection": "collections",
+    "about": "about",
+    "contact": "contact"
+  }
+}

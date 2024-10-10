@@ -14,25 +14,25 @@ import violetShoe from "./violet shoe.jpg";
 export const products = [
   {
     id: 1,
-    name: "white t-shirt",
+    name: "t-shirt",
     price: 80,
     src: whiteTshirt,
     category: "Man",
-    productId: "man wearing white t-shirt",
+    productId: "white t-shirt",
     quantity: 1,
   },
   {
     id: 2,
-    name: "black t-shirt",
+    name: "t-shirt",
     price: 80,
     src: blackTshirt,
     category: "Man",
-    productId: "man wearing black t-shirt",
+    productId: "black t-shirt",
     quantity: 1,
   },
   {
     id: 3,
-    name: "blue shoe",
+    name: "shoe / Chaussure",
     price: 90,
     src: blueShoe,
     category: "Man",
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     id: 4,
-    name: "yellow shoe",
+    name: "shoe / Chaussure",
     price: 120,
     src: yellowShoe,
     category: "Shoes",
@@ -59,7 +59,7 @@ export const products = [
   },
   {
     id: 6,
-    name: "black Shoe",
+    name: "Shoe / Chaussure",
     price: 100,
     src: blackShoe,
     category: "Shoes",
@@ -69,7 +69,7 @@ export const products = [
 
   {
     id: 7,
-    name: "green t-shirt",
+    name: "t-shirt",
     price: 80,
     src: greenTshirt,
     category: "Man",
@@ -79,7 +79,7 @@ export const products = [
 
   {
     id: 8,
-    name: "basket shoe",
+    name: "shoe / Chaussure",
     price: 60,
     src: basketShoe,
     category: "Man",
@@ -88,7 +88,7 @@ export const products = [
   },
   {
     id: 9,
-    name: "Brown Shoe",
+    name: "Shoe / Chaussure",
     price: 90,
     src: brownShoe,
     category: "Man",
@@ -97,7 +97,7 @@ export const products = [
   },
   {
     id: 10,
-    name: "brown boot",
+    name: "boot",
     price: 90,
     src: brownBoot,
     category: "Shoes",
@@ -106,7 +106,7 @@ export const products = [
   },
   {
     id: 11,
-    name: "Purple Shoe",
+    name: "Shoe / Chaussure",
     price: 100,
     src: violetShoe,
     category: "Man",
@@ -115,7 +115,7 @@ export const products = [
   },
   {
     id: 12,
-    name: "red t-shirt",
+    name: "t-shirt",
     price: 80,
     src: redTshirt,
     category: "Man",

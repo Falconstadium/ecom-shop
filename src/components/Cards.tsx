@@ -3,8 +3,11 @@ import { Button } from "flowbite-react";
 import { products } from "../assets/assets";
 import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import { useTranslation } from "react-i18next";
 
 const Cards = () => {
+  const { t } = useTranslation("global");
+
   const { dispatch } = useContext(CartContext);
 
   const [items, setItems] = useState<any>([]);
@@ -41,7 +44,7 @@ const Cards = () => {
                 pill
                 onClick={() => dispatch({ type: "add", item: item })}
               >
-                Add to Cart
+                {t("cart.add")}
               </Button>
             </div>
           </div>

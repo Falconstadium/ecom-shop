@@ -3,17 +3,21 @@ import { products } from "../assets/assets";
 import { Button } from "flowbite-react";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { useTranslation } from "react-i18next";
+import { FooterDown } from "./Footer";
 
 const Collection = () => {
+  const { t } = useTranslation("global");
+
   const { dispatch } = useContext(CartContext);
 
   return (
     <main className="container mx-auto mt-8 grid place-content-center px-4">
       <div className="grid place-items-center gap-1 pb-4 text-center">
-        <h2 className="text-2xl font-semibold">Collection</h2>
-        <p className="text-sm text-gray-700">
-          Discover more products with this awesome collection
-        </p>
+        <h2 className="text-2xl font-semibold capitalize">
+          {t("nav.collection")}
+        </h2>
+        <p className="text-sm text-gray-700">{t("collection.parag")}</p>
       </div>
       <div className="m-auto flex w-full flex-wrap items-center justify-center gap-12 py-12 lg:gap-16">
         {products?.map((item: any) => {
@@ -42,7 +46,7 @@ const Collection = () => {
                   pill
                   onClick={() => dispatch({ type: "add", item: item })}
                 >
-                  Add to Cart
+                  {t("cart.add")}
                 </Button>
               </div>
             </div>

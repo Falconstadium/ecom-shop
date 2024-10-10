@@ -5,7 +5,7 @@ import headphone from "../assets/headphone.png";
 
 const CarouselSlider = () => {
   return (
-    <div className="mx-auto mb-12 h-60 overflow-hidden rounded-md bg-slate-200 shadow-sm lg:h-72">
+    <div className="container mx-auto mb-12 h-60 overflow-hidden rounded-md bg-slate-200 shadow-sm lg:h-72">
       <Carousel slideInterval={3000}>
         <img
           className="w-full object-cover lg:w-96"

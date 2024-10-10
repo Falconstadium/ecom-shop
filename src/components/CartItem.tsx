@@ -1,8 +1,11 @@
 import { Button } from "flowbite-react";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
+import { useTranslation } from "react-i18next";
 
 const CartItem = ({ item }: any) => {
+  const { t } = useTranslation("global");
+
   const { cart, dispatch } = useContext(CartContext);
 
   const increaseItem = (id: number) => {
@@ -40,7 +43,7 @@ const CartItem = ({ item }: any) => {
         color="failure"
         onClick={() => dispatch({ type: "remove", id: item.id })}
       >
-        Remove
+        {t("cart.remove")}
       </Button>
     </div>
   );

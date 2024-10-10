@@ -1,0 +1,65 @@
+{
+  "nav":{
+    "home": "Accueil",
+    "collection": "collections",
+    "about": "à propos",
+    "contact": "contact"
+  },
+
+  "collection":{
+    "parag": "Découvrez plus de produits avec cette collection"
+  },
+
+  "cart":{
+    "empty": "Votre panier est vide.",
+    "back": "Retour à la boutique",
+    "add": "Ajouter au panier",
+    "remove": "supprimer",
+    "checkout": "Procéder au paiement"
+  },
+
+  "subscribe":{
+    "title": "Abonnez-vous à notre newsletter",
+    "btn": "abonner"
+  },
+
+  "about":{
+    "description": "Bienvenue chez ecom Shopper! Nous sommes déterminés à vous offrir la meilleure expérience possible. Notre équipe est passionnée par la livraison de contenu et de services de haute qualité qui répondent à vos besoins. Que vous cherchiez les dernières nouvelles, des articles intéressants ou des produits de première qualité, nous avons ce qu’il vous faut. Notre mission est de donner à nos utilisateurs des informations fiables et des services exceptionnels. Nous nous efforçons d’être votre go-toto pour tous vos besoins, en veillant à ce que vous avez accès aux ressources disponibles. Nous vous remercions d’avoir visité notre site Web. Nous espérons que vous apprécierez votre séjour ici et trouverez tout ce que vous cherchez. Si vous avez des questions ou des commentaires, s’il vous plaît ne pas hésiter à reachout pour nous.",
+    "brand": "ecom Shopper"
+  },
+
+  "contact":{
+    "name": "Votre nom",
+    "email": "Votre email",
+    "placeholder": "nom@email.com",
+    "country": "Votre pays",
+    "country_place": "Maroc",
+    "message": "Votre message",
+    "textarea": "Laissez un message...",
+    "submit": "envoyer",
+    "success_toast": "Message envoyé avec succès",
+    "error_toast": "Message non envoyé"
+  },
+
+  "user":{
+    "create": "créer votre compte",
+    "email": "Votre email",
+    "pass": "votre mot de passe",
+    "repeat": "Répéter le mot de passe",
+    "terms": "Je suis d’accord avec les",
+    "condition": "termes et conditions",
+    "register_btn": "Créer un nouveau compte",
+    "already": "Vous avez déjà un compte ?",
+    "signin": "Connectez-vous",
+    "signup": "s'inscrire",
+    "account": "Je n’ai pas de compte",
+    "remember": "se souvenir de moi"
+    },
+
+  "footer":{
+    "home": "Accueil",
+    "collection": "collections",
+    "about": "à propos",
+    "contact": "contact"
+  }
+}
